@@ -1,4 +1,8 @@
 /*! tailwindcss v4.0.6 | MIT License | https://tailwindcss.com */
+@font-face {
+  font-family: "roboto";
+  src: url(../fonts/Roboto-VariableFont_wdth\,wght.ttf);
+}
 @layer theme, base, components, utilities;
 @layer theme {
   :root, :host {
@@ -692,6 +696,9 @@
       max-width: 96rem !important;
     }
   }
+  .mx-auto {
+    margin-inline: auto;
+  }
   .box-border {
     box-sizing: border-box;
   }
@@ -796,6 +803,9 @@
   }
   .w-1\/2 {
     width: calc(1/2 * 100%);
+  }
+  .w-\[180px\] {
+    width: 180px;
   }
   .w-screen {
     width: 100vw;
@@ -1202,6 +1212,15 @@
   .justify-items-stretch {
     justify-items: stretch;
   }
+  .gap-2 {
+    gap: calc(var(--spacing) * 2);
+  }
+  .gap-2\.5 {
+    gap: calc(var(--spacing) * 2.5);
+  }
+  .gap-10 {
+    gap: calc(var(--spacing) * 10);
+  }
   .space-y-reverse {
     :where(& > :not(:last-child)) {
       --tw-space-y-reverse: 1;
@@ -1295,6 +1314,12 @@
   }
   .rounded {
     border-radius: 0.25rem;
+  }
+  .rounded-4xl {
+    border-radius: var(--radius-4xl);
+  }
+  .rounded-full {
+    border-radius: calc(infinity * 1px);
   }
   .rounded-s {
     border-start-start-radius: 0.25rem;
@@ -1404,6 +1429,9 @@
     --tw-border-style: solid;
     border-style: solid;
   }
+  .border-gray-300 {
+    border-color: var(--color-gray-300);
+  }
   .bg-\(--my_variable\) {
     background-color: var(--my_variable);
   }
@@ -1412,6 +1440,9 @@
   }
   .bg-\[\#0088cc\] {
     background-color: #0088cc;
+  }
+  .bg-\[\#274C5B\] {
+    background-color: #274C5B;
   }
   .bg-\[color\:var\(--my-color\)\] {
     background-color: var(--my-color);
@@ -1597,6 +1628,21 @@
   .p-1 {
     padding: calc(var(--spacing) * 1);
   }
+  .p-4 {
+    padding: calc(var(--spacing) * 4);
+  }
+  .py-10 {
+    padding-block: calc(var(--spacing) * 10);
+  }
+  .py-\[7px\] {
+    padding-block: 7px;
+  }
+  .pr-7 {
+    padding-right: calc(var(--spacing) * 7);
+  }
+  .pl-2 {
+    padding-left: calc(var(--spacing) * 2);
+  }
   .text-center {
     text-align: center;
   }
@@ -1639,12 +1685,15 @@
   .align-top {
     vertical-align: top;
   }
-  .text-4xl {
-    font-size: var(--text-4xl);
-    line-height: var(--tw-leading, var(--text-4xl--line-height));
+  .font-\[roboto\] {
+    font-family: roboto;
   }
-  .text-\[12px\] {
-    font-size: 12px;
+  .text-\[19px\] {
+    font-size: 19px;
+  }
+  .leading-\[32px\] {
+    --tw-leading: 32px;
+    line-height: 32px;
   }
   .leading-none {
     --tw-leading: 1;
@@ -1723,8 +1772,8 @@
   .\[color\:red\]\/50\! {
     color: color-mix(in oklab, red 50%, transparent) !important;
   }
-  .text-red-700 {
-    color: var(--color-red-700);
+  .text-\[\#274C5B\] {
+    color: #274C5B;
   }
   .capitalize {
     text-transform: capitalize;
@@ -2169,6 +2218,35 @@
   .transform-view {
     transform-box: view-box;
   }
+  .max-\[1000px\]\:block {
+    @media (width < 1000px) {
+      display: block;
+    }
+  }
+  .max-\[1000px\]\:flex {
+    @media (width < 1000px) {
+      display: flex;
+    }
+  }
+  .max-\[1000px\]\:hidden {
+    @media (width < 1000px) {
+      display: none;
+    }
+  }
+  .max-\[1000px\]\:w-\[170px\] {
+    @media (width < 1000px) {
+      width: 170px;
+    }
+  }
+  .max-\[1000px\]\:w-\[180px\] {
+    @media (width < 1000px) {
+      width: 180px;
+    }
+  }
+}
+.container {
+  max-width: 1380px;
+  padding: 20px;
 }
 @keyframes spin {
   to {
