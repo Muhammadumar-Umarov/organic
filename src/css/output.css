@@ -798,14 +798,8 @@
   .min-h-screen {
     min-height: 100vh;
   }
-  .w-1 {
-    width: calc(var(--spacing) * 1);
-  }
   .w-1\/2 {
     width: calc(1/2 * 100%);
-  }
-  .w-\[180px\] {
-    width: 180px;
   }
   .w-screen {
     width: 100vw;
@@ -1211,9 +1205,6 @@
   }
   .justify-items-stretch {
     justify-items: stretch;
-  }
-  .gap-2 {
-    gap: calc(var(--spacing) * 2);
   }
   .gap-2\.5 {
     gap: calc(var(--spacing) * 2.5);
@@ -2218,11 +2209,6 @@
   .transform-view {
     transform-box: view-box;
   }
-  .max-\[1000px\]\:block {
-    @media (width < 1000px) {
-      display: block;
-    }
-  }
   .max-\[1000px\]\:flex {
     @media (width < 1000px) {
       display: flex;
@@ -2236,11 +2222,6 @@
   .max-\[1000px\]\:w-\[170px\] {
     @media (width < 1000px) {
       width: 170px;
-    }
-  }
-  .max-\[1000px\]\:w-\[180px\] {
-    @media (width < 1000px) {
-      width: 180px;
     }
   }
 }
