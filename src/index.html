@@ -1,30 +1,310 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Organick - Figma</title>
     <link rel="stylesheet" href="./css/output.css">
 </head>
-<body>  
-    <header class="py-10">
-        <nav class="container mx-auto flex items-center justify-between font-[roboto] text-[19px] leading-[32px] text-[#274C5B]">
-            <div class="max-[1000px]:w-[170px]">
+
+<body>
+    <header class="py-10 max-[1055px]:py-[30px] max-[480px]:py-[22px]">
+        <nav
+            class="container mx-auto flex items-center gap-[120px] p-0 font-[roboto] text-[19px] leading-[32px] text-[#274C5B] max-[1120px]:flex max-[1120px]:gap-[90px] max-[1055px]:justify-between">
+            <div class="max-[1000px]:w-[170px] max-[480px]:w-[150px]">
                 <img src="./images/logo.svg" alt="logo">
             </div>
-            <ul class="flex gap-10 items-center max-[1000px]:hidden ">
-                <li><a href="#"><span>Home</span></a></li>
-                <li><a href="#"><span>About Us</span></a></li>
-                <li><a href="#"><span>Shop</span></a></li>
-                <li><a href="#"><span>Pages</span></a></li>
-                <li><a href="#"><span>Contact Us</span></a></li>
+            <ul class="flex gap-10 items-center flex-1 max-[1055px]:hidden">
+                <li><a class="transition ease-[.3s] hover:text-[#7EB693]" href="#"><span>Home</span></a></li>
+                <li><a class="transition ease-[.3s] hover:text-[#7EB693]" href="#"><span>About Us</span></a></li>
+                <li><a class="transition ease-[.3s] hover:text-[#7EB693]" href="#"><span>Shop</span></a></li>
+                <li><a class="transition ease-[.3s] hover:text-[#7EB693]" href="#"><span>Pages</span></a></li>
+                <li><a class="transition ease-[.3s] hover:text-[#7EB693]" href="#"><span>Contact Us</span></a></li>
             </ul>
-            <div class="flex items-center gap-2.5 border border-gray-300 rounded-4xl py-[7px] pl-2 pr-7 max-[1000px]:hidden">
+            <div
+                class="flex items-center gap-2.5 border border-gray-300 rounded-4xl py-[7px] pl-2 pr-7 max-[1000px]:hidden">
                 <div class="bg-[#274C5B] p-4 rounded-full"><img src="./images/shopping-cart.svg" alt=""></div>
                 <span>Cart 0</span>
             </div>
-            <img src="./images/icons8-menu.svg" class="hidden max-[1000px]:flex" alt="menu" >
+            <img src="./images/icons8-menu.svg"
+                class="hidden max-[1000px]:flex max-[768px]:w-[40px] max-[480px]:w-[32px]" alt="menu">
         </nav>
     </header>
+    <main>
+        <section class="bg-[url(../images/hero-bg.svg)]  bg-no-repeat bg-cover bg-right h-[913px] w-full max-[1000px]:h-100dvh">
+            <div
+                class="container mx-auto flex flex-col items-start justify-center h-full max-[1000px]:items-center max-[1000px]:bg-white/40">
+                <p
+                    class="font-[yellowtail] text-[36px] text-[#7EB693] leading-[65px] mb-[15px] max-[1310px]:text-[32px] max-[1310px]:mb-[10px] max-[1000px]:mb-[16px] max-[670px]:text-[27px] max-[670px]:mb-[10px]">
+                    Made with nature</p>
+
+                <h1
+                    class="font-[roboto] text-shadow text-[70px] leading-[84px] max-w-[496px] font-[700] text-[#274C5B] mb-[30px] max-[1310px]:text-[64px] max-[1310px]:mb-[24px] max-[1000px]:max-w-full max-[1000px]:text-center max-[1000px]:mb-[30px] max-[1000px]:leading-[74px] max-[670px]:text-[54px] max-[670px]:leading-[68px] max-[570px]:text-[48px] max-[480px]:leading-[60px]">
+                    Welcome to the world of nature and organic.</h1>
+
+                <button
+                    class="flex items-center justify-center font-[roboto] text-[#274C5B] text-[19px] bg-[#EFD372] w-[219px] h-[82px] rounded-2xl gap-[24px] max-[1310px]:w-[200px] max-[1000px]:h-[72px] max-[670px]:w-[180px] max-[670px]:h-[62px] max-[670px]:text-[16px] ">Explore
+                    Now <div
+                        class="grid place-items-center bg-[#274C5B] rounded-full w-[38px] h-[38px] max-[670px]:w-[32px] max-[670px]:h-[32px]">
+                        <img src="./images/arrow-right.svg" alt="">
+                    </div></button>
+            </div>
+        </section>
+
+        <section class="container mx-auto grid grid-cols-2 gap-[50px] my-[140px] max-[960px]:grid-cols-1">
+            <div
+                class="bg-[url(../images/sc-1.svg)] bg-no-repeat bg-cover bg-right h-[378px] rounded-[30px] flex flex-col justify-center px-[55px] max-[1200px]:px-[40px] max-[1100px]:px-[30px] max-[960px]:w-[665px] max-[960px]:mx-auto max-[720px]:w-[inherit] max-[480px]:px-[20px]">
+                <div
+                    class="max-[1200px]:bg-black/15 max-[960px]:bg-transparent rounded-[20px] p-[8px] max-[620px]:bg-black/15">
+                    <p
+                        class="font-[yellowtail] text-[36px] leading-[65px] text-white max-[1200px]:text-[32px] max-[1200px]:leading-[60px] max-[480px]:text-[26px]">
+                        Natural!!</p>
+                    <p
+                        class="font-[roboto] text-[40px] text-white leading-[52px] max-[1200px]:text-[37px] max-[1200px]:leading-[46px] max-[480px]:text-[32px] max-[480px]:leading-[40px]">
+                        Get Garden <br> Fresh Fruits</p>
+                </div>
+            </div>
+            <div
+                class="bg-[url(../images/sc-2.svg)] bg-no-repeat bg-cover bg-right h-[378px] rounded-[30px] flex flex-col justify-center px-[55px] max-[1200px]:px-[40px] max-[1100px]:px-[30px] max-[960px]:w-[665px] max-[960px]:mx-auto max-[720px]:w-[inherit] max-[480px]:px-[20px]">
+                <div
+                    class="max-[1200px]:bg-white/40 rounded-[20px] p-[8px] max-[960px]:bg-transparent max-[620px]:bg-white/40">
+                    <p
+                        class="font-[yellowtail] text-[36px] leading-[65px] text-[#7EB693] max-[1200px]:text-[32px] max-[1200px]:leading-[60px] max-[480px]:text-[26px]">
+                        Offer!!</p>
+                    <p
+                        class="font-[roboto] text-[40px] text-[#274C5B] leading-[52px] max-[1200px]:text-[37px] max-[1200px]:leading-[46px] max-[480px]:text-[32px] max-[480px]:leading-[40px]">
+                        Get 10% off<br> on Vegetables</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-[#F9F8F8] pt-[130px] pb-[140px] max-[1100px]:pt-[90px]">
+            <div
+                class="container mx-auto grid grid-cols-2 gap-[30px] max-[1100px]:gap-[60px] max-[1100px]:grid-cols-1 max-[1100px]:place-items-center">
+                <div>
+                    <img src="./images/th-1.svg" alt="">
+                </div>
+                <div class="max-[1100px]:text-center ">
+                    <p
+                        class="font-[yellowtail] text-[36px] leading-[65px] text-[#7EB693] max-[1200px]:text-[32px] max-[1200px]:leading-[60px] max-[501px]:text-[26px] max-[501px]:leading-[45px]">
+                        About Us</p>
+                    <h2
+                        class="font-[roboto] font-[700] text-[45px] text-[#274C5B] leading-[59px] mb-[22px] max-[1200px]:text-[42px] max-[1200px]:leading-[56px] max-[1200px]:mb-[19px] max-[768px]:text-[39px] max-[768px]:leading-[52px] max-[501px]:text-[35px] max-[501px]:leading-[47px] max-[501px]:mb-[12px]">
+                        We Believe In Organic <br> Foods For Strong Health</h2>
+                    <p
+                        class=" w-full font-[roboto] text-[18px] text-[#525C60] leading-[32px] tracking-[.6px] mb-[55px] max-[1342px]:mb-[45px] max-[1200px]:text-[17px] max-[1200px]:leading-[28px] max-[1100px]:max-w-[75%] max-[1100px]:mx-auto max-[768px]:max-w-full max-[768px]:tracking-[.3px] max-[501px]:text-[14px] max-[501px]:leading-[25px] max-[501px]:tracking-[0] max-[501px]:mb-[28px]">
+                        Welcome to the world of natural and organic. Here you can discover the bounty of nature. We have
+                        grown on the principles of health, and care. We aim to give our customers a healthy
+                        chemical-free meal for perfect nutrition.
+                    </p>
+
+                    <div class="flex items-center gap-5 mb-[30px] max-[1100px]:flex-col max-[768px]:gap-[16px]">
+                        <div
+                            class="min-w-[100px] h-[100px] grid place-items-center rounded-[20px] bg-white max-[501px]:min-w-[80px] max-[501px]:h-[80px] ">
+                            <img src="./images/th-2.svg" alt="icon">
+                        </div>
+                        <div>
+                            <p
+                                class="font-[roboto] text-[25px] text-[#274C5B] leading-[35px] mb-[9px] max-[1272px]:text-[23px] max-[1272px]:leading-[30px] max-[768px]:text-[22px] max-[768px]:leading-[26px] max-[501px]:text-[20px] max-[501px]:leading-[23px]">
+                                Organic Foods Only</p>
+                            <p
+                                class="font-[roboto] text-[18px] text-[#525C60] leading-[32px] tracking-[.4px] max-[1272px]:text-[16px] max-[1272px]:leading-[28px] max-[1100px]:max-w-[75%] max-[1100px]:mx-auto max-[768px]:max-w-full max-[768px]:tracking-[.3px] max-[501px]:text-[14px] max-[501px]:leading-[25px] max-[501px]:tracking-[0]">
+                                The Product that you ordered will be verified that we have or not if have we will start
+                                to move on with the next step.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-5 mb-[50px] max-[1100px]:flex-col max-[768px]:gap-[16px]">
+                        <div
+                            class="min-w-[100px] h-[100px] grid place-items-center rounded-[20px] bg-white max-[501px]:min-w-[80px] max-[501px]:h-[80px] ">
+                            <img src="./images/th-3.svg" alt="icon">
+                        </div>
+                        <div>
+                            <p
+                                class="font-[roboto] text-[25px] text-[#274C5B] leading-[35px] mb-[9px] max-[1272px]:text-[23px] max-[1272px]:leading-[30px] max-[768px]:text-[22px] max-[768px]:leading-[26px] max-[501px]:text-[20px] max-[501px]:leading-[23px]">
+                                Quality Standards</p>
+                            <p
+                                class="font-[roboto] text-[18px] text-[#525C60] leading-[32px] tracking-[.4px] max-[1272px]:text-[16px] max-[1272px]:leading-[28px] max-[1100px]:max-w-[75%] max-[1100px]:mx-auto max-[768px]:max-w-full max-[768px]:tracking-[.3px] max-[501px]:text-[14px] max-[501px]:leading-[25px] max-[501px]:tracking-[0]">
+                                Once your product is packed it will be delivered to your nearby locality you can
+                                directly visit the to buy the product.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="w-[199px] h-[82px] rounded-2xl bg-[#274C5B] flex items-center justify-center gap-[25px] max-[1100px]:mx-auto max-[768px]:w-[180px] max-[768px]:h-[72px] max-[768px]:gap-[20px] max-[500px]:w-[165px] max-[500px]:h-[62px] max-[500px]:gap-[15px] ">
+                            <span class="text-[19px] leading-[32px] text-white font-[roboto] tracking-[.6px] max-[768px]:text-16px max-[500px]:text-[15px]  max-[500px]:tracking-[0]">Shop Now</span>
+                            <img class="bg-[#335B6B] p-[11px] rounded-full max-[500px]:p-[7px]" src="./images/arrow-right.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container mx-auto mt-[120px]">
+            <div class="flex flex-col items-center justify-center mb-[42px]">
+                <p class="font-[yellowtail] text-[36px] leading-[64px] text-[#7EB693]">Organic</p>
+                <p class="font-[roboto] text-[45px] leading-[58px] text-[#274C5B]  font-[700] ">Our Products</p>
+            </div>
+            <div class="grid grid-cols-3 gap-[20px] max-[860px]:grid-cols-2 max-[640px]:grid-cols-1">
+                <div class="relative px-[30px] pt-[67px] pb-[20px]  bg-[#F9F8F8] rounded-[30px]">
+                    <div>
+                        <img src="./images/pr1.svg" alt="">
+                    </div>
+                    <div class="grid place-items-center absolute top-[30px] left-[30px] w-[118px] h-[37px] bg-[#274C5B] rounded-[8px]">
+                        <p class="text-white text-[15px] font-[700] tracking-[.4px]">Vegetable</p>
+                    </div>
+                    <div>
+                        <div class="border-b-[1px] border-[#B8B8B8] pb-[10px]">
+                            <p class="text-[22px] font-[roboto] leading-[35px] text-[#274C5B]">Calabrese Broccoli</p>
+                        </div>
+                        <div class="flex items-center justify-between pt-[10px] max-lg:flex-col  max-lg:items-start">
+                            <div class="flex gap-[10px]">
+                                <p class="text-[15px] text-[#B8B8B8]"><del>$ 25.00 USD</del></p>
+                                <p class="text-[17px] font-[700] text-[#274C5B]">$ 21.00 USD</p>
+                            </div>
+                            <div class="flex">
+                                <img class="w-[13px] h-[13px]" src="./images/STAR.svg" alt="">
+                                <img class="w-[13px] h-[13px]" src="./images/STAR.svg" alt="">
+                                <img class="w-[13px] h-[13px]" src="./images/STAR.svg" alt="">
+                                <img class="w-[13px] h-[13px]" src="./images/STAR.svg" alt="">
+                                <img class="w-[13px] h-[13px]" src="./images/STAR.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative px-[30px] pt-[67px] pb-[20px]  bg-[#F9F8F8] rounded-[30px]">
+                    <div>
+                        <img class="w-full" src="./images/pr2.svg" alt="">
+                    </div>
+                    <div class="grid place-items-center absolute top-[30px] left-[30px] w-[118px] h-[37px] bg-[#274C5B] rounded-[8px]">
+                        <p class="text-white text-[15px] font-[700] tracking-[.4px]">Vegetable</p>
+                    </div>
+                    <div>
+                        <div class="border-b-[1px] border-[#B8B8B8] pb-[10px]">
+                            <p class="text-[22px] font-[roboto] leading-[35px] text-[#274C5B]">Fresh Corn</p>
+                        </div>
+                        <div class="flex items-center  justify-between pt-[10px] max-lg:flex-col max-lg:items-start">
+                            <div class="flex gap-[10px]">
+                                <p class="text-[15px] text-[#B8B8B8]"><del>$ 21.23 USD</del></p>
+                                <p class="text-[17px] font-[700] text-[#274C5B]">$ 18.00 USD</p>
+                            </div>
+                            <div class="flex">
+                                <img class="w-[13px] h-[13px]" src="./images/STAR.svg" alt="">
+                                <img class="w-[13px] h-[13px]" src="./images/STAR.svg" alt="">
+                                <img class="w-[13px] h-[13px]" src="./images/STAR.svg" alt="">
+                                <img class="w-[13px] h-[13px]" src="./images/STAR.svg" alt="">
+                                <img class="w-[13px] h-[13px]" src="./images/STAR.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative px-[30px] pt-[67px] pb-[20px]  bg-[#F9F8F8] rounded-[30px]">
+                    <div>
+                        <img class="w-full" src="./images/pr3.svg" alt="">
+                    </div>
+                    <div class="grid place-items-center absolute top-[30px] left-[30px] w-[118px] h-[37px] bg-[#274C5B] rounded-[8px]">
+                        <p class="text-white text-[15px] font-[700] tracking-[.4px] mr-[40px]">Mill</p>
+                    </div>
+                    <div>
+                        <div class="border-b-[1px] border-[#B8B8B8] pb-[10px]">
+                            <p class="text-[22px] font-[roboto] leading-[35px]  text-[#274C5B]">Dried Pistachio</p>
+                        </div>
+                        <div class="flex items-center  justify-between pt-[10px] max-lg:flex-col max-lg:items-start ">
+                            <div class="flex gap-[10px]">
+                                <p class="text-[15px] text-[#B8B8B8]"><del>$ 25.00 USD</del></p>
+                                <p class="text-[17px] font-[700] text-[#274C5B]">$ 48.00 USD</p>
+                            </div>
+                            <div class="flex">
+                                <img class="w-[13px] h-[13px]" src="./images/STAR.svg" alt="">
+                                <img class="w-[13px] h-[13px]" src="./images/STAR.svg" alt="">
+                                <img class="w-[13px] h-[13px]" src="./images/STAR.svg" alt="">
+                                <img class="w-[13px] h-[13px]" src="./images/STAR.svg" alt="">
+                                <img class="w-[13px] h-[13px]" src="./images/STAR.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative px-[30px] pt-[67px] pb-[20px]  bg-[#F9F8F8] rounded-[30px]">
+                    <div>
+                        <img class="w-full" src="./images/pr4.svg" alt="">
+                    </div>
+                    <div class="grid place-items-center absolute top-[30px] left-[30px] w-[118px] h-[37px] bg-[#274C5B] rounded-[8px]">
+                        <p class="text-white text-[15px] font-[700] tracking-[.4px]">Vegetable</p>
+                    </div>
+                    <div>
+                        <div class="border-b-[1px] border-[#B8B8B8] pb-[10px]">
+                            <p class="text-[22px] font-[roboto] leading-[35px]  text-[#274C5B]">Vegan Red Tomato</p>
+                        </div>
+                        <div class="flex items-center  justify-between pt-[10px] max-lg:flex-col max-lg:items-start">
+                            <div class="flex gap-[10px]">
+                                <p class="text-[15px] text-[#B8B8B8]"><del>$ 25.00 USD</del></p>
+                                <p class="text-[17px] font-[700] text-[#274C5B]">$ 9.37 USD</p>
+                            </div>
+                            <div class="flex">
+                                <img class="w-[13px] h-[13px]" src="./images/STAR.svg" alt="">
+                                <img class="w-[13px] h-[13px]" src="./images/STAR.svg" alt="">
+                                <img class="w-[13px] h-[13px]" src="./images/STAR.svg" alt="">
+                                <img class="w-[13px] h-[13px]" src="./images/STAR.svg" alt="">
+                                <img class="w-[13px] h-[13px]" src="./images/STAR.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative px-[30px] pt-[67px] pb-[20px]  bg-[#F9F8F8] rounded-[30px]">
+                    <div>
+                        <img class="w-full" src="./images/pr5.svg" alt="">
+                    </div>
+                    <div class="grid place-items-center absolute top-[30px] left-[30px] w-[118px] h-[37px] bg-[#274C5B] rounded-[8px]">
+                        <p class="text-white text-[15px] font-[700] tracking-[.4px] mr-[40px]">Fru</p>
+                    </div>
+                    <div>
+                        <div class="border-b-[1px] border-[#B8B8B8] pb-[10px]">
+                            <p class="text-[22px] font-[roboto] leading-[35px]  text-[#274C5B]">Organic Almonds</p>
+                        </div>
+                        <div class="flex items-center  justify-between pt-[10px] max-lg:flex-col max-lg:items-start">
+                            <div class="flex gap-[10px]">
+                                <p class="text-[15px] text-[#B8B8B8]"><del>$ 25.00 USD</del></p>
+                                <p class="text-[17px] font-[700] text-[#274C5B]">$ 18.00 USD</p>
+                            </div>
+                            <div class="flex">
+                                <img class="w-[13px] h-[13px]" src="./images/STAR.svg" alt="">
+                                <img class="w-[13px] h-[13px]" src="./images/STAR.svg" alt="">
+                                <img class="w-[13px] h-[13px]" src="./images/STAR.svg" alt="">
+                                <img class="w-[13px] h-[13px]" src="./images/STAR.svg" alt="">
+                                <img class="w-[13px] h-[13px]" src="./images/STAR.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative px-[30px] pt-[67px] pb-[20px]  bg-[#F9F8F8] rounded-[30px]">
+                    <div>
+                        <img class="w-full" src="./images/pr6.svg" alt="">
+                    </div>
+                    <div class="grid place-items-center absolute top-[30px] left-[30px] w-[118px] h-[37px] bg-[#274C5B] rounded-[8px]">
+                        <p class="text-white text-[15px] font-[700] tracking-[.4px] mr-[40px]">Mill</p>
+                    </div>
+                    <div>
+                        <div class="border-b-[1px] border-[#B8B8B8] pb-[10px]">
+                            <p class="text-[22px] font-[roboto] leading-[35px] text-[#274C5B]">Brown Hazelnut</p>
+                        </div>
+                        <div class="flex items-center  justify-between  pt-[10px] max-lg:flex-col max-lg:items-start">
+                            <div class="flex gap-[10px]">
+                                <p class="text-[15px] text-[#B8B8B8]"><del>$ 25.00 USD</del></p>
+                                <p class="text-[17px] font-[700] text-[#274C5B]">$ 34.00 USD</p>
+                            </div>
+                            <div class="flex">
+                                <img class="w-[13px] h-[13px]" src="./images/STAR.svg" alt="">
+                                <img class="w-[13px] h-[13px]" src="./images/STAR.svg" alt="">
+                                <img class="w-[13px] h-[13px]" src="./images/STAR.svg" alt="">
+                                <img class="w-[13px] h-[13px]" src="./images/STAR.svg" alt="">
+                                <img class="w-[13px] h-[13px]" src="./images/STAR.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
 </body>
+
 </html>
